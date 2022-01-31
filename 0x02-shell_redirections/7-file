@@ -1,4 +1,4 @@
 #!/bin/bash
 #\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)
-#echo "Best School" > "\*\\\'\"Best School\"\\'\\\*$\?\*\*\*\*\*:)"
-echo "\*\\\'\"Best School\"\\'\\\*$\?\*\*\*\*\*:)"
+echo "Best School" > "\*\\\'\"Best School\"\\'\\\*$\?\*\*\*\*\*:)"
+#echo "\*\\\'\"Best School\"\\'\\\*$\?\*\*\*\*\*:)"
