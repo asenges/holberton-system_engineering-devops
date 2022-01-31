@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Rla | grep -c d*
+ls -Rla |grep "^d" |grep -v "\.$" | wc -l
