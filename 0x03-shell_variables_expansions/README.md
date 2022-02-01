@@ -10,4 +10,7 @@ Add /action to the PATH. /action should be the last directory the shell looks in
 3-paths
 Create a script that counts the number of directories in the PATH.
 
+4-global_variables
+Create a script that lists environment variables.
+
 

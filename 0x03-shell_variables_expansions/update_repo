@@ -1,5 +1,5 @@
 #!/bin/bash
 chmod -R 777 *
 git add .
-git commit -m "Shell redirections and filters commands"
+git commit -m "Shell variable expansions"
 git push --set-upstream origin main
