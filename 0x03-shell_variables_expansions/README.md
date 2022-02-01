@@ -31,4 +31,7 @@ Write a script that prints the result of POWER divided by DIVIDE, followed by a 
 10-love_exponent_breath
 Write a script that displays the result of BREATH to the power LOVE
 
+11-binary_to_decimal
+Write a script that converts a number from base 2 to base 10.
+
 
