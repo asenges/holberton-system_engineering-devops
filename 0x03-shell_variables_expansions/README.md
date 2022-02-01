@@ -19,4 +19,7 @@ Create a script that lists all local variables and environment variables, and fu
 6-create_local_variable
 Create a script that creates a new local variable.
 
+7-create_global_variable
+Create a script that creates a new global variable.
+
 
