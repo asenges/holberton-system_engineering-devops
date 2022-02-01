@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -oP '^[^:]+|.*:\K[^:]+(?=:[^:]+)' /etc/password
+ls -l -d $(cut -d':' -f6 /etc/passwd) 2>/dev/null | sort -u
