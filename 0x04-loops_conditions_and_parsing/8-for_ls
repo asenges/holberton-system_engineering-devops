@@ -1,0 +1,7 @@
+#!/bin/bash
+dir_content=0
+command=$(ls)
+for dir_content in $command
+do
+    echo "$dir_content" | cut -d "-" -f2
+done
