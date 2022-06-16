@@ -1,0 +1,11 @@
+#!/bin/bash
+betty 1-for_best_school
+betty 2-while_best_school
+betty 3-until_best_school
+betty 4-if_9_say_hi
+betty 5-4_bad_luck_8_is_your_chance
+betty 6-superstitious_numbers
+betty 7-clock
+betty 8-for_ls
+betty 9-to_file_or_not_to_file
+betty 10-fizzbuzz
