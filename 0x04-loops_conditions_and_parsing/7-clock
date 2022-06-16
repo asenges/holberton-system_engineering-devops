@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Clock
 hour=1
 echo "Hour: 0"
 while [ $hour -le 13 ]; do
