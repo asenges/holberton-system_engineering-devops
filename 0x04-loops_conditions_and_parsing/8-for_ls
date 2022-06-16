@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# For ls
 cmd=$(ls)
 for f in $cmd
 do
