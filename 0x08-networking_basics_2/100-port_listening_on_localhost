@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Listen on socket localhost:98 using Netcat
+nc -l 98
