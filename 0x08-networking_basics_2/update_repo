@@ -1,0 +1,5 @@
+#!/bin/bash
+chmod -R 777 *
+git add .
+git commit -m "0x08. Networking basics #1"
+git push --set-upstream origin main
