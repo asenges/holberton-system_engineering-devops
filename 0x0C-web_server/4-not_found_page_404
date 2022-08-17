@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # 4. Not found page 404
-echo "Ceci n'est pas une page" | sudo tee file /var/www/html/404.html
+echo "Ceci n'est pas une page\n" | sudo tee file /var/www/html/404.html
 sudo sed -i "error_page 404 /404.html;" /etc/nginx/sites-available/default
 sudo service nginx restart
