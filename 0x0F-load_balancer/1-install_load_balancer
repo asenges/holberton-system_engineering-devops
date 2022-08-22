@@ -4,7 +4,7 @@ sudo apt-get update
 sudo apt-get -y install haproxy
 sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.original2
 echo -e 
-"listen 3284-lb-01
+	"listen 3284-lb-01
     bind 0:80
     mode http
     stats enable
@@ -13,5 +13,5 @@ echo -e
     option forwardfor
     server 4426-web-01 54.224.105.134 check port 80
     server 4426-web-02 34.239.247.122 check port 80
-" | sudo tee -a /etc/haproxy/haproxy.cfg
+	" | sudo tee -a /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
