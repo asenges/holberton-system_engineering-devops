@@ -2,7 +2,7 @@
 # 1. Install your load balancer
 sudo apt-get update
 sudo apt-get -y install haproxy
-echo "listen 3284-lb-01
+echo "listen 4426-lb-01
         bind 0:80
         mode http
         stats enable
