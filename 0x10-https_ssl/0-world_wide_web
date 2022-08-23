@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# 0. World wide web
+if [ "$#" -eq 1 ];
+then
+	sub=("www" "lb-01" "web-01" "web-02")
+	for i in "${sub[@]}"
+	do
+		dig "$i"."$1"| grep -A1 'ANSWER SECTION:' | awk 'NR==2{SUB=$1; REC=$4; DEST=$5; split(SUB, sd, "."); print "The subdomain " sd[1], "is a " REC, "record and points to " DEST}';
+	done
+elif [ "$#" -eq 2 ];
+then
+	dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | awk 'NR==2{SUB=$1; REC=$4; DEST=$5; split(SUB, sd, "."); print "The subdomain " sd[1], "is a " REC, "record and points to " DEST}';
+fi
