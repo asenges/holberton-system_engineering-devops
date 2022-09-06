@@ -16,7 +16,6 @@ if __name__ == "__main__":
             uid = int(argv[1])
             url = "https://jsonplaceholder.typicode.com/users/"
             userRequest = requests.get("{}/{}".format(url, uid))
-            data = userRequest.json()
             if userRequest.json().get("username") is not None:
                 todoListRequest = requests.get("{}{}/todos".format(url, uid))
                 with open("{}.csv".format(uid), 'w', newline='') as f:
