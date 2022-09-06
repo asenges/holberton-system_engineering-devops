@@ -26,7 +26,8 @@ if __name__ == "__main__":
                         doneTasks.append(thisTask)
                 doneTaskCount = len(doneTasks)
                 print("Employee {} is done with tasks({}/{}):"
-                      .format(userRequest.json().get("name"), doneTaskCount, taskCounter))
+                      .format(userRequest.json().get("name"),
+                              doneTaskCount, taskCounter))
                 for thisTask in doneTasks:
                     print("\t {}".format(thisTask.get("title")))
             else:
