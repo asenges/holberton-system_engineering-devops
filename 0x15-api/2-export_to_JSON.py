@@ -24,7 +24,7 @@ if __name__ == "__main__":
                     for task in todoListRequest.json():
                         obj.append({'task': task.get('title'),
                                     'completed': task.get('completed'),
-                                    'username': task.get('username')})
+                                    'username': userRequest.json().get('username')})
                     file = {'{}'.format(uid): obj}
                     json.dump(file, f)
             else:
