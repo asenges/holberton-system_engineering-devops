@@ -8,7 +8,7 @@ import sys
 
 
 def recurse(subreddit, hot_list=[], after=''):
-    url = 'https://www.reddit.com/r/{}/hot.json?after={}'.format(subreddit, after)
+    url = 'https://www.reddit.com/r/{}/hot.json{}'.format(subreddit, after)
     print(url)
     headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64)\
                AppleWebKit/537.36 (KHTML, like Gecko)\
@@ -19,7 +19,7 @@ def recurse(subreddit, hot_list=[], after=''):
         for post in data['data']['children']:
             hot_list.append(post['data']['title'])
         if data['data']['after']:
-            recurse(subreddit, hot_list, data['data']['after'])
+            recurse(subreddit, hot_list, "?after=" + data['data']['after'])
         return hot_list
     else:
         return None
