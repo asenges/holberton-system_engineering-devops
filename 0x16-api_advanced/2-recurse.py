@@ -20,7 +20,7 @@ def recurse(subreddit, hot_list=[]):
             i += 1
             #print(i, post['data']['title'])
             hot_list.append(post['data']['title'])
-        if data['data']['after'] != 't3_xkgyiq':
+        if data['data']['after']:#!= 't3_xkgyiq':
             #print("Data After", data['data']['after'])
             recurse(subreddit, hot_list)
         return hot_list
