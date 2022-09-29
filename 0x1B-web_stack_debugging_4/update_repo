@@ -1,0 +1,5 @@
+#!/bin/bash
+chmod -R 777 *
+git add .
+git commit -m "0x1B. Web stack debugging #4"
+git push --set-upstream origin main
